@@ -21,6 +21,7 @@ public class EMIDetailsController {
 	
 	@RequestMapping(value = "/emi")
 	public String message() {
+		
 		return "EMI Details works!";
 	}
 	
@@ -34,5 +35,9 @@ public class EMIDetailsController {
 	public EMIDetails getData(@PathVariable("id")int id) {
 		EMIDetails ed = service.getDataById(id);
 		return ed;
+	}
+	
+	public void dted() {
+		System.out.println("testing");
 	}
 }
